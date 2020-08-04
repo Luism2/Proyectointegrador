@@ -18,32 +18,11 @@ $('.menu a').each(function(index, elemneto){
         },1500);
     }
 // Scroll elementos Menores
-var acercaDe = $('#acerca-de').offset().top,
-     Menu = $('#platillos').offset().top,
-     Galeria = $('#Galeria').offset().top,
-     Ubicacion= $('#Ubicacion').offset().top;
-$('#btn-acerca-de').on('click', function(e){
+var Ubicacion= $('#Ubicacion').offset().top;
+$('#btn-Ubicacion').on('click', function(e){
     e.preventDefault();
-    $('html, body').animate({
-        scrollTop:acercaDe -100
-         }, 500);
-    });
-    $('#btn-Menu').on('click', function(e){
-        e.preventDefault();
         $('html, body').animate({
-            scrollTop:Menu
-             }, 500);
-        });
-        $('#btn-Galeria').on('click', function(e){
-            e.preventDefault();
-            $('html, body').animate({
-                scrollTop:Galeria
-                 }, 500);
-            });
-            $('#btn-Ubicacion').on('click', function(e){
-                e.preventDefault();
-                $('html, body').animate({
-                    scrollTop:Ubicacion
-                     }, 500);
-                });
+        scrollTop:Ubicacion
+        }, 500);
+    });
 });
