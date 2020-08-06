@@ -1,0 +1,119 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 16px;
+    background-color: rgb(75, 46, 19);
+    color: #ffffff;
+    line-height: 1.5;
+}
+header .menu {
+    width:97%;
+    text-align: right;
+}
+header .menu a {
+    color: #fff;
+    font-size:20px;
+    font-weight:300;
+    display:inline-block;
+    margin: 10px 20px;
+    text-decoration:none;
+    position: relative;
+}
+header .menu a:hover{
+    text-decoration: underline;
+}
+
+.overlay { 
+    position: relative; 
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('../img/39.jpg');
+    background-size: cover;
+}    
+.overlay::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(75, 46, 19, 0.8);
+}
+.cont {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 800px;
+    padding: 40px;
+    background: rgba(88, 54, 23, .8);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, .5);
+    border-radius: 40px;
+}
+.cont h2 {
+    margin: 0 0 30px;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+    position: relative;
+}
+.contform {
+    display: inline-flex;
+}
+.cont form {
+    width: 100%;
+    margin: 0px 82.5px;
+}
+.cont .input {
+    position: relative;
+}
+.cont .input input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+}
+.cont .input label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+}
+.cont .input input:focus ~ label,
+.cont .input input:valid ~ label {
+    top: -18px;
+    left: 0;
+    color: #03a9f4;
+    font-size: 12px;
+}
+.cont input[type="submit"] {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #e45e5f;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+
+}
